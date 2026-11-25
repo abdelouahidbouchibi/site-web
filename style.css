@@ -57,9 +57,6 @@
     padding: 0 1.5rem;
   }
 
-  /* ==========================================================================
-    2. HEADER & HERO (Portrait + Présentation)
-    ========================================================================== */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -149,7 +146,7 @@
     box-shadow: 0 0 20px rgba(200, 162, 88, 0.35);
   }
 
-  /* Portrait principal */
+
   .portrait {
     width: 310px;
     height: 390px;
@@ -168,9 +165,7 @@
     filter: contrast(1.05) sepia(0%);
   }
 
-  /* ==========================================================================
-    3. SECTIONS GÉNÉRALES
-    ========================================================================== */
+
   section {
     padding: 5rem 0;
   }
@@ -197,9 +192,7 @@
     border-bottom: 1px solid var(--bordure);
   }
 
-  /* ==========================================================================
-    3 bis. BIOGRAPHIE (Who is Johnny Depp)
-    ========================================================================== */
+
   #biographie {
     scroll-margin-top: 2rem;
   }
@@ -221,7 +214,7 @@
     margin-bottom: 0;
   }
 
-  /* Lettrine sur le premier paragraphe */
+
   .bio-texte p:first-child::first-letter {
     float: left;
     font-family: var(--font-titre);
@@ -240,9 +233,6 @@
     color: var(--texte-clair);
   }
 
-  /* ==========================================================================
-    4. GRILLE DES FILMS (Colonnes)
-    ========================================================================== */
   .grille-films {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -267,7 +257,7 @@
 
   .film img {
     width: 100%;
-    aspect-ratio: 2 / 3; /* Format affiche de cinéma uniforme */
+    aspect-ratio: 2 / 3;
     object-fit: cover;
     display: block;
     filter: grayscale(25%) contrast(1.06);
@@ -302,9 +292,7 @@
     padding: 0 1.2rem 1.4rem;
   }
 
-  /* ==========================================================================
-    5. GRILLE DES TROPHÉES
-    ========================================================================== */
+ 
   .grille-trophees {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -353,7 +341,7 @@
     border-radius: 2px;
   }
 
-  /* Style spécifique pour la carte "nomination" (Oscars) */
+
   .trophee.nomination {
     border-top-color: var(--rouge-rideau);
     border-style: dashed;
@@ -364,9 +352,7 @@
     color: #c96a6a;
   }
 
-  /* ==========================================================================
-    6. FOOTER
-    ========================================================================== */
+ 
   footer {
     padding: 2.5rem 0;
     text-align: center;
@@ -375,9 +361,7 @@
     letter-spacing: 1px;
   }
 
-  /* ==========================================================================
-    7. RESPONSIVE (Tablettes & Mobiles)
-    ========================================================================== */
+
   @media (max-width: 820px) {
     .hero-contenu {
       flex-direction: column-reverse;
