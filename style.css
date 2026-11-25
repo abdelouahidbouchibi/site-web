@@ -1,14 +1,11 @@
-/* ==========================================================================
-   1. VARIABLES & CONFIGURATION (Ambiance Cinéma Sombre / Johnny Depp)
-   ========================================================================== */
 :root {
-  --bg-principal: #0b0b0d;       /* Noir salle de cinéma */
-  --bg-secondaire: #141418;      /* Fond des sections et cartes */
-  --bg-carte: #1a1a20;           /* Fond légèrement relevé */
-  --texte-clair: #eae6df;        /* Blanc cassé parchemin */
-  --texte-gris: #9e9a93;         /* Gris doux pour les descriptions */
-  --or-vieilli: #c8a258;         /* Doré patiné (Oscars / Pirates) */
-  --rouge-rideau: #7a1c1c;       /* Rouge sombre velours */
+  --bg-principal: #0b0b0d;      
+  --bg-secondaire: #141418;     
+  --bg-carte: #1a1a20;          
+  --texte-clair: #eae6df;        
+  --texte-gris: #9e9a93;         
+  --or-vieilli: #c8a258;         
+  --rouge-rideau: #7a1c1c;       
   --bordure: #2c2c34;
 
   --font-titre: 'IM Fell English', serif;
@@ -104,7 +101,15 @@ body {
 /* Navigation */
 nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.2rem;
+}
+.eyebrow {
+  color: #c9a24d;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
 
 nav a {
@@ -171,6 +176,49 @@ h2 {
   margin-bottom: 3rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--bordure);
+}
+
+/* ==========================================================================
+   3 bis. BIOGRAPHIE (Who is Johnny Depp)
+   ========================================================================== */
+#biographie {
+  scroll-margin-top: 2rem;
+}
+
+.bio-texte {
+  max-width: 780px;
+  padding-left: 2rem;
+  border-left:none;
+}
+
+.bio-texte p {
+  font-size: 1.08rem;
+  line-height: 1.85;
+  color: var(--texte-gris);
+  margin-bottom: 1.4rem;
+}
+
+.bio-texte p:last-child {
+  margin-bottom: 0;
+}
+
+/* Lettrine sur le premier paragraphe */
+.bio-texte p:first-child::first-letter {
+  float: left;
+  font-family: var(--font-titre);
+  font-size: 3.8rem;
+  line-height: 0.85;
+  padding: 0.3rem 0.6rem 0 0;
+  color: var(--or-vieilli);
+}
+
+.bio-texte strong {
+  color: var(--or-vieilli);
+  font-weight: 600;
+}
+
+.bio-texte em {
+  color: var(--texte-clair);
 }
 
 /* ==========================================================================
@@ -348,5 +396,9 @@ footer {
 
   nav {
     flex-direction: column;
+  }
+
+  .bio-texte {
+    padding-left: 1.2rem;
   }
 }
